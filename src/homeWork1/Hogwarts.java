@@ -5,9 +5,10 @@ public class Hogwarts {
     public void compare(HogwartsStudent student1, HogwartsStudent student2) {
         int resultStudent1 = student1.getMagicPower() + student1.getTransgressionDistance();
         int resultStudent2 = student2.getMagicPower() + student2.getTransgressionDistance();
-        int resultStudent3 = student2.getMagicPower() + student2.getTransgressionDistance();
         if (resultStudent1 > resultStudent2) {
             System.out.println(student1 + " является лучше чем " + student2);
+        }else {
+            System.out.println(student2 + " является лучше чем " + student1);
         }
     }
 
@@ -33,6 +34,16 @@ public class Hogwarts {
                 + student1.getPower();
         int resultStudent2 = student2.getCunning() + student2.getDetermination()
                 + student2.getAmbition() + student1.getResourcefulness() + student1.getPower();
+        if (resultStudent1 > resultStudent2) {
+            System.out.println(student1 + " является лучше чем " + student2);
+        }
+    }
+
+    public void compare(ClawStudent student1, ClawStudent student2) {
+        int resultStudent1 = student1.getIntelligence() + student1.getWisdom() +
+                student1.getWisdom() + student1.getCreativity() + student1.getWit();
+        int resultStudent2 = student2.getIntelligence() + student2.getWisdom() +
+                student2.getWisdom() + student2.getCreativity() + student2.getWit();
         if (resultStudent1 > resultStudent2) {
             System.out.println(student1 + " является лучше чем " + student2);
         }

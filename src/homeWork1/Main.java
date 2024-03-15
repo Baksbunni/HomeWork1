@@ -21,7 +21,5 @@ public class Main {
         ClawStudent clawStudent3 = new ClawStudent("Гойл", 4,
                 22, 37, 21, 8, 5);
         hogwarts.compare(gryffindor3,clawStudent2);
-
-
     }
 }
